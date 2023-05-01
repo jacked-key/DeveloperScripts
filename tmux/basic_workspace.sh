@@ -2,7 +2,7 @@
 
 set -eux
 
-sesssion="Workspace"
+session="Workspace"
 BASE_DIR="/home/jackie/MountedWorkspace/changeThisToo"
 
 tmux new-session -d -s $session
