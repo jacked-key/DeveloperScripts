@@ -15,6 +15,7 @@ send() {
 
 standard_split() {
 	DIR=$1
+	send cd $DIR
 	tmux split-window -h #1
 	send cd $DIR
 	tmux split-window -v #2
