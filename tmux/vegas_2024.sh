@@ -9,8 +9,8 @@ source "$SCRIPT_DIR/utility/tmux_window_split.sh"
 
 BASE_DIR="/home/jackie/Workspace/VegasTrip2024"
 
-standard_split 'tmux' "${BASE_DIR}/frontend/"
-dual_window_split 'vimrc' "${BASE_DIR}/backend/"
-dual_window_split 'vimrc' "${BASE_DIR}/mongo_db/"
+standard_split 'frontend' "${BASE_DIR}/frontend/"
+dual_window_split 'backend' "${BASE_DIR}/backend/"
+dual_window_split 'mongo_db' "${BASE_DIR}/mongo_db/"
 
 tmux a -t $tmux_session
