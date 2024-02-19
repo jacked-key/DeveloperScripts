@@ -4,7 +4,8 @@ if [ -z "${tmux_session}" ]; then
   echo "Must provide tmux_session as exported variable"
 fi
 
-tmux kill-ses -t $tmux_session
+## adding the boolean operator to ignore exit code
+tmux kill-ses -t $tmux_session || true
 tmux new-session -d -s $tmux_session
 tmux rename-window 'blank check'
 
