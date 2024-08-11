@@ -7,7 +7,7 @@ fi
 ## adding the boolean operator to ignore exit code
 tmux kill-ses -t $tmux_session || true
 tmux new-session -d -s $tmux_session
-tmux rename-window 'blank check'
+tmux rename-window 'blank window'
 
 ## Send command to the current tmux window
 send_to_window() {
@@ -18,6 +18,8 @@ send_to_window() {
 ## Exit with code 1 if not a valid directory
 check_valid_directory() {
   directory="$@"
+  # Expand tilde to the home directory path
+  directory=$(eval echo "$directory")
   if [ ! -d "$directory" ]; then
     echo "Error: $directory is not a directory"
     return 1

@@ -98,6 +98,3 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 ### ALIAS ###
-alias get-bank="rsync -r /home/jackie/MountedWorkspace/bankalyze /home/jackie/Workspace"
-alias put-bank="rsync -r /home/jackie/Workspace/bankalyze /home/jackie/MountedWorkspace"
-alias sync-bank="get-bank && put-bank"

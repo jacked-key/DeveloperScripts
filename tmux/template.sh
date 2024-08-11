@@ -11,3 +11,5 @@ BASE_DIR="/path/to/dir"
 
 standard_split 'NameOfFirstWindow' "${BASE_DIR}/dir2/"
 box_split 'NameOfSecondWindow' "${BASE_DIR}/dir2/"
+
+tmux a -t $tmux_session
