@@ -8,7 +8,7 @@ export tmux_session="LivingAgents"
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 source "$SCRIPT_DIR/utility/tmux_window_split.sh"
 
-BASE_DIR="~/workspace/LivingAgents"
+BASE_DIR=~/workspace/LivingAgents
 
 standard_split 'SourceCode' "${BASE_DIR}/LivingAgentsSourceCode/"
 
